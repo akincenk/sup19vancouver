@@ -1,0 +1,15 @@
+# Local checks, run by prek (or pre-commit) on every commit. No Actions minutes.
+# Tools come from Homebrew; a missing tool is skipped (e.g. on the Air), never blocks.
+repos:
+  - repo: local
+    hooks:
+      - id: gitleaks
+        name: gitleaks (staged changes)
+        entry: sh -c 'command -v gitleaks >/dev/null || exit 0; gitleaks git --pre-commit --staged --redact --no-banner .'
+        language: system
+        pass_filenames: false
+      - id: zizmor
+        name: zizmor (GitHub Actions security)
+        entry: sh -c 'command -v zizmor >/dev/null || exit 0; zizmor --offline --min-severity medium "$@"' --
+        language: system
+        files: ^\.github/workflows/.*\.ya?ml$

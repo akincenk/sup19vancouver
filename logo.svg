@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e3b5c"/><stop offset="0.42" stop-color="#3a86ad"/>
+      <stop offset="0.72" stop-color="#f0a35e"/><stop offset="1" stop-color="#f8cf86"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a7d9c"/><stop offset="1" stop-color="#082a40"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe6b0" stop-opacity="0.9"/><stop offset="1" stop-color="#ffe6b0" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="w"><rect y="668" width="1080" height="420"/></clipPath><clipPath id="c"><circle cx="540" cy="540" r="530"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="1080" height="660" fill="url(#sky)"/>
+    <circle cx="250" cy="560" r="95" fill="#ffe6b0"/><circle cx="250" cy="560" r="140" fill="#ffe6b0" opacity="0.25"/>
+    <path d="M0 660 C80 600 140 560 210 585 C280 520 330 500 380 545 C440 470 500 500 560 560 C640 500 720 470 800 520 C870 480 950 500 1080 560 L1080 660 Z" fill="#4f7f95" opacity="0.8"/>
+    <path d="M0 660 L150 590 L230 615 L330 470 L362 500 L392 440 L440 505 L520 600 L640 545 L760 610 L900 560 L1080 610 L1080 660 Z" fill="#1c475e"/>
+    <path d="M330 470 L345 492 L362 482 L372 497 L392 440 L410 468 L398 480 L384 474 L370 505 L355 492 L340 506 Z" fill="#eef5f8"/>
+    <path d="M0 655 L1080 655 L1080 668 L0 668 Z" fill="#163c50"/>
+    <rect y="660" width="1080" height="420" fill="url(#sea)"/>
+    <radialGradient id="rg" cx="0.5" cy="0" r="0.9"><stop offset="0" stop-color="#ffe6b0" stop-opacity="0.55"/><stop offset="1" stop-color="#ffe6b0" stop-opacity="0"/></radialGradient><g stroke="#ffe6b0" stroke-linecap="round" opacity="0.5"><line x1="190" y1="690" x2="310" y2="690" stroke-width="8"/><line x1="210" y1="725" x2="290" y2="725" stroke-width="6"/><line x1="232" y1="756" x2="268" y2="756" stroke-width="5"/></g>
+    <g stroke="#bfe0ec" stroke-linecap="round" opacity="0.35" stroke-width="7">
+      <line x1="90" y1="760" x2="230" y2="760"/><line x1="830" y1="740" x2="990" y2="740"/>
+      <line x1="140" y1="960" x2="260" y2="960"/><line x1="780" y1="980" x2="900" y2="980"/>
+    </g>
+    <!-- board -->
+    <path d="M285 846 C420 868 650 868 812 836 C826 834 830 850 816 856 C650 896 420 900 300 870 C278 864 272 846 285 846 Z" fill="#f6f2e9"/>
+    <path d="M318 862 C450 880 640 878 790 850" stroke="#d93a35" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <!-- paddler: athletic silhouette, slight forward lean, bent knees -->
+    <g fill="#0a1d2c">
+      <ellipse cx="586" cy="548" rx="27" ry="30"/>
+      <path d="M560 585 C575 572 604 574 616 590 C628 622 626 660 618 700 C612 716 590 720 578 712 C566 690 560 650 556 620 C554 604 554 592 560 585 Z"/>
+      <path d="M582 706 C574 740 566 770 556 800 C552 812 548 830 546 846 L566 846 C570 826 576 808 584 790 C592 770 600 744 604 716 Z"/>
+      <path d="M600 712 C612 744 622 770 628 796 C632 814 634 830 636 846 L656 846 C654 826 650 806 646 786 C640 758 632 730 620 706 Z"/>
+      <path d="M604 598 C636 590 670 574 700 556 L710 570 C680 592 644 610 606 620 Z"/><circle cx="707" cy="562" r="11"/>
+      <path d="M572 606 C598 646 640 676 686 692 L682 708 C630 696 584 664 556 624 Z"/><circle cx="688" cy="700" r="11"/>
+    </g>
+    <!-- paddle -->
+    <line x1="712" y1="520" x2="676" y2="840" stroke="#0a1d2c" stroke-width="11" stroke-linecap="round"/>
+    <path d="M700 520 L726 520" stroke="#0a1d2c" stroke-width="11" stroke-linecap="round"/>
+    <path d="M664 828 L690 832 L684 912 C680 926 664 926 660 912 Z" fill="#0a1d2c"/>
+    <!-- maple leaf (11-point, flag-like) -->
+    <g transform="translate(838 236) scale(0.95)" fill="#d93a35">
+      <path d="M0 -92 L14 -64 C18 -58 24 -58 30 -62 L44 -70 L34 -22 C32 -12 40 -8 48 -14 L60 -26 L64 -14 C66 -8 72 -6 78 -8 L104 -14 L94 14 C90 22 94 28 100 30 L108 34 L64 70 C58 76 60 84 62 90 L66 104 L10 96 C6 96 4 100 4 104 L6 150 L-6 150 L-4 104 C-4 100 -6 96 -10 96 L-66 104 L-62 90 C-60 84 -58 76 -64 70 L-108 34 L-100 30 C-94 28 -90 22 -94 14 L-104 -14 L-78 -8 C-72 -6 -66 -8 -64 -14 L-60 -26 L-48 -14 C-40 -8 -32 -12 -34 -22 L-44 -70 L-30 -62 C-24 -58 -18 -58 -14 -64 Z"/>
+    </g>
+  </g>
+  <circle cx="540" cy="540" r="525" fill="none" stroke="#f6f2e9" stroke-width="18"/>
+</svg>
